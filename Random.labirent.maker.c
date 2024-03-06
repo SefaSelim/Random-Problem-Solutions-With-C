@@ -32,27 +32,36 @@ while(pointer2!=11 )
 {
     int go =rand()%3+1;
 
-    printf("%d \n",go);
-
 switch(go)
 {
     case 1:
+        if( maze[pointer1][pointer2+2]=='.' ||  maze[pointer1+1][pointer2+1]=='.' ||  maze[pointer1-1][pointer2+1]=='.')
+            break;
         pointer2++;
     maze[pointer1][pointer2]='.';
     break;
     case 2:
         if(pointer1+1==11)
             break;
+            else if( maze[pointer1+1][pointer2-1]=='.' ||  maze[pointer1+1][pointer2+1]=='.' ||  maze[pointer1+2][pointer2]=='.')
+            break;
+
+
+
             pointer1++;
         maze[pointer1][pointer2]='.';
         break;
     case 3:
+
         if(pointer1-1==0)
+            break;
+            else if( maze[pointer1-1][pointer2+1]=='.' ||  maze[pointer1-1][pointer2-1]=='.' ||  maze[pointer1-2][pointer2]=='.')
             break;
             pointer1--;
         maze[pointer1][pointer2]='.';
         break;
 }
+
 }
 
 

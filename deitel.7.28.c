@@ -26,18 +26,9 @@ int choice=0;
 printf(" please enter what opertor you want to do : \n");
 scanf("%d",&choice);
 
-if(choice==0)
+
     (*notIslemleri[choice])(ogrenciNotlari);
-else if(choice==1)
-    (*notIslemleri[choice])(ogrenciNotlari);
-else if(choice==2)
-    (*notIslemleri[choice])(ogrenciNotlari);
-else if(choice==3)
-    (*notIslemleri[choice])(ogrenciNotlari);
-else
-{
-    printf("error \n \n");
-}
+
 
     return 0;
 }

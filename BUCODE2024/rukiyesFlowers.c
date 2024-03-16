@@ -1,6 +1,3 @@
-//LINK: https://algoleague.com/contest/bucode-bogazici-algorithm-competition-2024-qualification-round/problem/rukiyes-flowers/detail
-
-
 #include <stdio.h>
 
 int main (void)
